@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Articles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/material-design/material.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/material-design/ripples.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/custom/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/material-design/bootstrap-material-design.min.css') }}">
 </head>
 <body>
   @include('layout.head_nav')
@@ -24,9 +26,11 @@
 
       @yield("content")   
 </div>
-
 <script src="{{ asset('js/jquery/jquery-3.2.1.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('js/material-design/material.min.js') }}"></script>
+    <script src="{{ asset('js/material-design/material.min.js') }}"></script>
+  <script src="{{ asset('js/material-design/ripples.min.js') }}"></script>
+
+
 </body>
 </html>
