@@ -1,3 +1,4 @@
+
 <div class="navbar navbar-default">
               <div class="container-fluid">
                 <div class="navbar-header">
@@ -6,27 +7,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="{{url('/')}}">Home</a>
+                  <a class="navbar-brand" href="{{url('/')}}">Articles App</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{url('articles')}}">Articles</a></li>
-                    <li><a href="javascript:void(0)">Link</a></li>
-                    <li class="dropdown">
-                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                        <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="javascript:void(0)">Action</a></li>
-                        <li><a href="javascript:void(0)">Another action</a></li>
-                        <li><a href="javascript:void(0)">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
-                        <li><a href="javascript:void(0)">One more separated link</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="navbar-form navbar-left">
+                    <li class="{{ Request::is('articles') ? 'active' : '' }}"><a href="{{url('articles')}}">Articles</a></li>
+                   <!--  <li><a href="javascript:void(0)">Link</a></li>
+                 </ul> -->
+                  <!-- <form class="navbar-form navbar-left">
                     <div class="form-group">
                       <input type="text" class="form-control col-sm-8" placeholder="Search">
                     </div>
@@ -44,7 +32,7 @@
                         <li><a href="javascript:void(0)">Separated link</a></li>
                       </ul>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
